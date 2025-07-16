@@ -22,7 +22,7 @@ const db = async () => {
         const connectionString = `${config.db}${config.dbConnection}${config.database}`;
         console.log("Connecting to MongoDB:", connectionString);
         
-        const response = await mongoose.connect(connectionString);
+        // const response = await mongoose.connect(connectionString);
         const databaseResponseMessage = "Database connected successfully";
         console.log(databaseResponseMessage);
         logger.success(databaseResponseMessage);
