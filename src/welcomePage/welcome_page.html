@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Land Record Management - Backend Service</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #2e2e2e;
+      min-height: 100vh;
+      /* Andhra Pradesh map as background wallpaper */
+      background: 
+        linear-gradient(to bottom right, #e3f2fdcc, #ffffffcc),
+        url('/apMap2.png') center center / cover no-repeat fixed;
+      background-blend-mode: lighten;
+      /* The image will cover the whole area */
+    }
+
+    .logo-corner {
+      position: absolute;
+      top: 24px;
+      left: 32px;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+    }
+    .logo-corner img {
+      height: 64px;
+      width: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      background: #fff8;
+      padding: 4px;
+    }
+    .logo-corner span {
+      margin-left: 12px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #1976d2;
+      letter-spacing: 0.5px;
+      text-shadow: 0 1px 4px #fff8;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 0 20px;
+      z-index: 1;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #1976d2;
+      text-shadow: 0 2px 8px #fff8;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: #424242;
+      text-shadow: 0 1px 4px #fff8;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #555;
+      max-width: 600px;
+      background: #fff8;
+      border-radius: 8px;
+      padding: 8px 16px;
+      margin: 0 auto 1.5rem auto;
+      box-shadow: 0 1px 4px #0001;
+    }
+
+    .status-box {
+      margin-top: 2rem;
+      padding: 15px 25px;
+      background-color: #c8e6c9;
+      border: 1px solid #388e3c;
+      color: #2e7d32;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: inline-block;
+      backdrop-filter: blur(1px);
+    }
+
+    footer {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 10px;
+      font-size: 0.9rem;
+      color: #888;
+      text-align: center;
+      background: #fff8;
+      border-radius: 6px;
+      padding: 2px 12px;
+      box-shadow: 0 1px 4px #0001;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top left logo -->
+  <div class="logo-corner">
+    <img src="/apLogo.png" alt="AP Govt Logo" />
+    <span>KADA - Dept. of Land Records</span>
+  </div>
+  <div class="container">
+    <h1>Land Record Management</h1>
+    <h2>Backend Service is Running 🚀</h2>
+    <p style="font-size: 0.8em">
+      Welcome to the Land Record Management System. This backend server is actively running and ready to serve API requests for managing land ownership, transactions, and related records on 
+      <span style="font-weight: bold; font-size: 2.2em; background: linear-gradient(90deg, #ff9800, #e91e63, #3f51b5, #00e676); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+        blockchain
+      </span>.
+    </p>
+    <div class="status-box">
+      ✅ Server Status: Online & Listening
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 All Rights Reserved KADA - Department of Land Records, Government of Andhra Pradesh
+  </footer>
+</body>
+</html>
